@@ -48,7 +48,7 @@
   <span class="target" id="module-pghstore"></span><div class="section" id="pghstore-postgresql-hstore-formatter">
 <h1><a class="reference internal" href="#module-pghstore" title="pghstore"><tt class="xref py py-mod docutils literal"><span class="pre">pghstore</span></tt></a> &#8212; PostgreSQL hstore formatter<a class="headerlink" href="#pghstore-postgresql-hstore-formatter" title="Permalink to this headline">¶</a></h1>
 <p>This small module implements a formatter and a loader for <a class="reference external" href="http://www.postgresql.org/docs/9.1/static/hstore.html">hstore</a>,
-one of <a class="reference external" href="http://www.postgresql.org/">PostgreSQL</a> supplied modules, that stores a simple key-value pairs.</p>
+one of <a class="reference external" href="http://www.postgresql.org/">PostgreSQL</a> supplied modules, that stores simple key-value pairs.</p>
 <div class="highlight-pycon"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">dumps</span><span class="p">({</span><span class="s">u&#39;a&#39;</span><span class="p">:</span> <span class="s">u&#39;1&#39;</span><span class="p">})</span>
 <span class="go">&#39;&quot;a&quot;=&gt;&quot;1&quot;&#39;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">loads</span><span class="p">(</span><span class="s">&#39;&quot;a&quot;=&gt;&quot;1&quot;&#39;</span><span class="p">)</span>
@@ -217,7 +217,7 @@ instead of a string.</p>
 
 <dl class="data">
 <dt id="pghstore.PAIR_RE">
-<tt class="descclassname">pghstore.</tt><tt class="descname">PAIR_RE</tt><em class="property"> = &lt;_sre.SRE_Pattern object at 0x7fd1e06236b0&gt;</em><a class="headerlink" href="#pghstore.PAIR_RE" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">pghstore.</tt><tt class="descname">PAIR_RE</tt><em class="property"> = &lt;_sre.SRE_Pattern object at 0x7faf00d236b0&gt;</em><a class="headerlink" href="#pghstore.PAIR_RE" title="Permalink to this definition">¶</a></dt>
 <dd><p>The pattern of pairs.  It captures following four groups:</p>
 <dl class="docutils">
 <dt><tt class="docutils literal"><span class="pre">kq</span></tt></dt>
@@ -247,7 +247,7 @@ object.</p>
 
 <dl class="data">
 <dt id="pghstore.ESCAPE_RE">
-<tt class="descclassname">pghstore.</tt><tt class="descname">ESCAPE_RE</tt><em class="property"> = &lt;_sre.SRE_Pattern object at 0x100ffb4b0&gt;</em><a class="headerlink" href="#pghstore.ESCAPE_RE" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">pghstore.</tt><tt class="descname">ESCAPE_RE</tt><em class="property"> = &lt;_sre.SRE_Pattern object at 0x101cd24b0&gt;</em><a class="headerlink" href="#pghstore.ESCAPE_RE" title="Permalink to this definition">¶</a></dt>
 <dd><p>The escape sequence pattern.</p>
 </dd></dl>
 
